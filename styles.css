@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: burlywood;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+
+.title {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.creator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+#task {
+    width: 60%;    
+    height: 2rem;
+    font-weight: bold;
+}
+
+#submit {
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 2%;
+    margin: 1rem auto;
+    background-color: grey;
+}
+
+.todo i, #checkbox {
+    cursor: pointer;
+}
+
+.todo i {
+    color: red;
+}
