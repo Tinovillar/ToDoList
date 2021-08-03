@@ -13,11 +13,16 @@ let checks = [];
    
    
    document.addEventListener('DOMContentLoaded', () => {
-        arr = JSON.parse(localStorage.getItem('todos'));
-        checks = JSON.parse(localStorage.getItem('checks'));
-
-        if (arr.length == 0) {
+        if (JSON.parse(localStorage.getItem('todos')) !== null) {
+            arr = JSON.parse(localStorage.getItem('todos'));
+            checks = JSON.parse(localStorage.getItem('checks'));
+            if (arr.length == 0) {
+                arr = ['Example'];
+                checks = [''];
+            }
+        } else {
             arr = ['Example'];
+            checks = [''];
         }
         for(let i = 0; i < arr.length; i++) {
             taskCreator(arr[i], checks[i]);
